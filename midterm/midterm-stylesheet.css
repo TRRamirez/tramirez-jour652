@@ -1,1 +1,59 @@
 midterm-stylesheet.css
+
+.headline { 
+ font-family:"Georgia", sans-serif;
+ font-size: 30px;
+ font-style: normal;
+ width:fit-content;
+ margin: 0 auto;
+ color:#288255
+}
+.byline  {
+font-family: Helvetica, sans-serif;
+font-size: 20px;
+font-style:italic;
+Color: darkblue;
+}
+#date {
+font-family: Helvetica, sans-serif;
+font-size: 12px;
+font-style: italic;
+color: darkblue;
+}
+
+#content{
+margin: 0 auto;
+width: 600px;
+}
+
+.summary {
+text-align: center;
+font-style: italic;
+font-size: 20px;
+width: auto;
+}
+
+blockquote {
+font: 24px normal helvetica, sans-serif;
+font-style: italic;
+margin-top: 15px;
+margin-bottom: 15px;
+color: #288255;
+margin-left: 50px;
+padding-left: 15px;
+border-left: 10, solid, #ccc;
+font-weight: bold;
+}
+
+.subheadline {
+font-family: "Georgia", sans-serif;
+font-size: 20px;
+color:rgb(193, 45, 45);
+}
+
+.article {
+margin: 0 auto;
+max-width: 950px;
+padding-left: 0 20px;
+padding-right: 0 20px;
+}

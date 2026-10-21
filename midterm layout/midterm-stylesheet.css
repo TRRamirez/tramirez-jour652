@@ -1,1 +1,17 @@
 
+.headline {
+ font-family:"Georgia", sans-serif;
+ font-size: 30px;
+ font-style: normal;
+ width: 900px;
+ margin: 0 auto;
+ text-align: left;
+}
+
+
+.summary{
+text-align: center;
+font-style: italic;
+font-size: 30px;
+}
+
