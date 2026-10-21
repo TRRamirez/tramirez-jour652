@@ -2,7 +2,7 @@ stylesheet.css
 
 #content{
 margin: 0 auto;
-width: 900px;
+width: 600px;
 }
 .headline {
  font-family:"Georgia", sans-serif;
@@ -10,6 +10,7 @@ width: 900px;
  font-style: normal;
  width: 900px;
  margin: 0 auto;
+ text-align: left;
 }
 .byline  {
 font-family: Helvetica, sans-serif;
@@ -24,7 +25,7 @@ font-style: italic;
 color: darkblue;
 }
 blockquote {
-font: 16px/24px normal helvetica, sans-serif;
+font: 24px normal helvetica, sans-serif;
 font-style: italic;
 margin-top: 15px;
 margin-bottom: 15px;
@@ -32,6 +33,7 @@ color: #0d5480;
 margin-left: 50px;
 padding-left: 15px;
 border-left: 4, solid, #ccc;
+font-weight: bold;
 }
 #masthead {
 text-align: center;
@@ -45,4 +47,11 @@ font-style: normal;
 font-family: "Georgia", sans-serif;
 font-size: 20px;
 color:blue;
+}
+
+#article {
+margin: 0 auto;
+max-width: 600px;
+padding-left: 0 20px;
+padding-right: 0 20px;
 }
