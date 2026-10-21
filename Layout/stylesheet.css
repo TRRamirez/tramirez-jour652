@@ -1,0 +1,48 @@
+stylesheet.css
+
+#content{
+margin: 0 auto;
+width: 900px;
+}
+.headline {
+ font-family:"Georgia", sans-serif;
+ font-size: 30px;
+ font-style: normal;
+ width: 900px;
+ margin: 0 auto;
+}
+.byline  {
+font-family: Helvetica, sans-serif;
+font-size: 14px;
+font-style:italic;
+Color: darkblue;
+}
+.date {
+font-family: Helvetica, sans-serif;
+font-size: 12px;
+font-style: italic;
+color: darkblue;
+}
+blockquote {
+font: 16px/24px normal helvetica, sans-serif;
+font-style: italic;
+margin-top: 15px;
+margin-bottom: 15px;
+color: #0d5480;
+margin-left: 50px;
+padding-left: 15px;
+border-left: 4, solid, #ccc;
+}
+#masthead {
+text-align: center;
+color: rgb(60, 104, 200);
+font-family: "Georgia", sans-serif;
+font-size: 50px;
+font-optical-sizing: auto;
+font-style: normal;
+}
+.subheadline {
+font-family: "Georgia", sans-serif;
+font-size: 20px;
+color:blue;
+}
