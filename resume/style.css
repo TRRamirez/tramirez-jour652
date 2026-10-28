@@ -1,20 +1,245 @@
-/*new styles for resume*/
+/*styles for background*/
+body {
+    background-color: #F5F0E6;
+    color: #252525;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+}
+
+/*style for masthead*/
+.masthead {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px clamp(16px, 4vw, 60px) 0;
+    background-color: #F5F0E6;
+    color: #252525;
+}
+
+.masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.65rem, 1.1vw, 0.8rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.masthead-main {
+    text-align: center;
+    padding: clamp(25px, 4vw, 50px) 0;
+    border-bottom: 3px solid #252525;
+}
+
+.masthead-main h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.masthead-subtitle {
+    margin: 18px 0 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.65rem, 1.4vw, 0.95rem);
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: clamp(1px, 0.2vw, 2.5px);
+    text-transform: uppercase; 
+}
+
+@media (max-width: 576px) {
+    .masthead {
+        padding-top: 14px;
+    }
+    .masthead-top {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+        gap: 8px;
+    }
+    .masthead-main {
+        padding: 30px 0;
+    }
+    .masthead-main h1 {
+        letter-spacing: -0.8px;
+    }
+    .masthead-subtitle {
+        max-width: 320px;
+        margin: 14px auto 0;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+}
+
+/*Style for Navigation Bar*/
+.resume-navbar {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F5F0E6;
+    padding: 0 clamp(12px, 3vw, 40px);
+    border-bottom: 1px solid #252525;
+}
+
+.resume-nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(18px, 3vw, 42px);
+    padding: 16px 0;
+}
+
+.resume-nav-links a {
+    color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.resume-nav-links a:hover,
+.resume-nav-links a:focus-visible {
+    color: #423793;
+    border-bottom-color: #423793;
+}
+
+@media (max-width: 576px) {
+    .resume-nav-links {
+        gap: 10px 20px;
+        padding: 14px 0;
+    }
+    .resume-nav-links a {
+        font-size: 0.68rem;
+        letter-spacing: 1px;
+    }
+}
+
+/*Style for About Me Section*/
+.about-section {
+    background-color: #F5F0E6;
+    color: #252525;
+    padding: clamp(40px, 7vw, 85px) 0;
+}
+
+.profile-photo {
+    width: clamp(180px, 23vw, 270px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #000000;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #F5F0E6;
+}
+
+/*Style for Experience Section*/
+.experience-card {
+    border-top: 1px solid #b8b0a4;
+    padding: 22px 0;
+}
+
+.experience-card:last-child {
+    border-bottom: 1px solid #b8b0a4;
+}
+
+.experience-card summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.experience-card small,
+.experience-tags {
+    color: #423793;
+    letter-spacing: 1.5px;
+    font-size: 0.75rem;
+}
+
+.experience-card strong {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+}
+
+.toggle-icon {
+    font-size: 1.8rem;
+    transition: transform 0.2s ease;
+}
+
+.experience-details {
+    padding: 20px 35px 0 0;
+    color: #373232;
+    line-height: 1.8;
+}
+
+/*Style for Education*/
+.education-section {
+    padding: 70px 0;
+    background-color: #F5F0E6;
+}
+
+.education-heading {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.education-item {
+    border-top: 1px solid #ccc;
+    padding: 25px 0;
+}
+
+.education-date {
+    color: #423793;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+.education-item h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.education-item h4 {
+    font-size: 1rem;
+    color: #555;
+}
+
+.education-item p:last-child {
+    color: #666;
+}
+
+
+
+
+
+
 
 /*general style for resume*/
-body {
-font-family:'Open Sans', Arial, sans-serif;
-font-size:1 em;
-color: #444;
-font-weight:400;
-}
 
 /*page width*/
 #container {
 width:100%;
 max-width:1200px;
 margin:0 auto;
-padding-bottom:50px;
-}
+padding-bottom:50px;}
 
 /*name styling*/
 #name {
@@ -25,8 +250,7 @@ text-align:center;
 border-bottom:1px solid #33485e;
 width:60%;
 min-width:300px;
-margin:0 auto;
-}
+margin:0 auto;}
 
 /*title styling*/
 #title {
@@ -39,27 +263,23 @@ font-weight:600;
 margin-top:20px;
 margin-bottom:0px;
 margin-left:0px;
-margin-right:0px;
-}
+margin-right:0px;}
 
 /*contact information*/
 .menu {
 margin:0 auto;
 text-align:center;
-padding:0px;
-}
+padding:0px;}
 
 /*line item styling*/
 .menu li {
 margin:0px;
-text-align:center;
-}
+text-align:center;}
 
 /*contact styling*/
 .contact {
 display: inline;
-text-align: center;
-}
+text-align: center;}
 
 /*date styling*/
 .dates {
@@ -67,23 +287,20 @@ font-size:1em;
 font-weight:400;
 font-style:italic;
 margin-top:10px;
-margin-bottom:0px;
- }
+margin-bottom:0px;}
 
  /*job desccription styling*/
  .description {
 margin-top:10px;
 margin-bottom:10px;
 margin-left:0px;
-margin-right:0px;
- }
+margin-right:0px;}
 
  /*job title styling*/
  .jobtitle {
 font-size:1.5em;
 font-weight:600px;
-color: #000000;
- }
+color: #000000;}
 
 /*section header styling*/
 .sectionheader {
@@ -93,16 +310,14 @@ color: #fff;
 text-transform: uppercase;
 font-weight: 400px;
 margin-top: 20px;
-width: 70%;
-}
+width: 70%;}
 
  /*education styling*/
  #degrees {
 margin-top:5px;
 margin-bottom:0px;
 margin-left:0px;
-margin-right:0px;
- }
+margin-right:0px;}
 
  /*skills list styling*/
  #do {
@@ -110,13 +325,4 @@ margin-top:5px;
 margin-bottom:0px;
 margin-left:0px;
 margin-right:0px;
-color: #000000;
- }
-
- /*mission statement styling*/
-.top {
-width:60%;
-min-width:300px;
-margin:0 auto;
-margin-bottom:30px;
-}
+color: #000000;}
